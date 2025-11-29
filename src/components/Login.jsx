@@ -46,7 +46,7 @@ const Login = () => {
 
         {/* ✅ Add reCAPTCHA widget */}
         <ReCAPTCHA
-          sitekey="6LeaTRwsAAAAACQ0hpdX8UohMJ-Zx8ajk39AOUpZ"   // Replace with your actual site key
+          sitekey="6LdUUBwsAAAAAM_gRYQ3jecR_iJAJUZNrO6bWb-5"   // Replace with your actual site key
           onChange={handleCaptcha}
         />
 
