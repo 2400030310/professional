@@ -1,0 +1,120 @@
+/* --- Page Container --- */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* --- Title --- */
+.signup-container h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 0.3px;
+}
+
+/* --- Form Card --- */
+.signup-form {
+  background: #ffffff;
+  padding: 55px 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.signup-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Input & Select Fields --- */
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #1e293b;
+  background-color: #f9fafb;
+  transition: all 0.25s ease;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+/* --- Button --- */
+.signup-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.4px;
+}
+
+.signup-form button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #1e3a8a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* --- Success Message --- */
+.success-msg {
+  margin-top: 18px;
+  color: #15803d;
+  font-weight: 600;
+  background: #dcfce7;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  animation: fadeIn 0.4s ease;
+}
+
+/* --- Subtle Fade-in Animation --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 40px 25px;
+    border-radius: 15px;
+  }
+
+  .signup-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .signup-form button {
+    font-size: 0.95rem;
+  }
+}
